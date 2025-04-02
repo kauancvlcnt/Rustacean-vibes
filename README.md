@@ -1,2 +1,2 @@
 # Rustacean-vibes
-This is my repository to learn rust 
+<h2>This is my repository to learn rust</h2> 
