@@ -1,0 +1,10 @@
+[package]
+name = "jogo_advinhacao"
+version = "0.1.0"
+edition = "2021"
+authors = ["kauanCvlcnt <kauancavalcante.dev@gmail.com>"]
+
+[dependencies]
+
+rand = "0.3.14"
+
