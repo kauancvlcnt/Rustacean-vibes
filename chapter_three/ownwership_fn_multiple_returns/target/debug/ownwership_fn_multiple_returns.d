@@ -1,0 +1,1 @@
+/home/plinx/Rust\ initializing/chapter_three/ownwership_fn_multiple_returns/target/debug/ownwership_fn_multiple_returns: /home/plinx/Rust\ initializing/chapter_three/ownwership_fn_multiple_returns/src/main.rs
