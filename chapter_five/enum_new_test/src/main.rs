@@ -5,7 +5,7 @@ enum VersionIp {
 }
 
 fn ip_version(ip_version: &VersionIp) -> String{
-    
+
    let your_ip =  match ip_version {
         VersionIp::V4 => 1,
         VersionIp::V6 => 2,
@@ -20,7 +20,5 @@ fn ip_version(ip_version: &VersionIp) -> String{
      
 
 fn main() {
-
    println!("{:#?}",ip_version(&VersionIp::V6));
-
 }
