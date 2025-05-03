@@ -1,0 +1,1 @@
+/home/plinx/Rust\ initializing/6-chapter_six/comunication/target/debug/comunication: /home/plinx/Rust\ initializing/6-chapter_six/comunication/src/lib.rs /home/plinx/Rust\ initializing/6-chapter_six/comunication/src/main.rs
