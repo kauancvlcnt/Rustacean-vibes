@@ -26,7 +26,7 @@ mod tests {
 }
 
 mod outermost {
-    pub fn middle_funcition() {}
+    pub fn middle_function() {}
     fn middle_secret_function() {}
     mod inside {
         pub fn inner_function() {}
@@ -39,11 +39,11 @@ fn try_me() {
     // que try me agora quem está dentro dele sim
     //veja que inside precisa ser colocado pub para que try_me() possa acessar fora de outermost
 
-    outermost::middle_funcition();
+    outermost::middle_function;
 
     //não serão acessados, pois o modulo inside e e algumas
     //funções são privadas
     // outermost::middle_secret_function();
-    // outermost::inside::inner_function();
+    // outermost::inside::inner_function
     // outermost::inside::secret_function();
 }
