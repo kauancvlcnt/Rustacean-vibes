@@ -25,7 +25,8 @@ fn main() {
 
     other_hashmap();
     iterator();
-    owership_hashmaps();
+    entry_for_any_value();
+    count_spaces();
 }
 
 fn other_hashmap() {
@@ -64,4 +65,37 @@ fn owership_hashmaps() {
     for (key, value) in my_hash {
         println!("{}: {}", key, value)
     }
+}
+
+fn entry_for_any_value() {
+    let mut new_hash = HashMap::new();
+    new_hash.insert("blue", 20);
+    new_hash.insert("blue", 21); //atualiza o valor da chave
+    new_hash.entry("yelow").or_insert(23); //verifica se existe, se não existe cria
+    // "yelow" passando o valor 23
+    //parece bom para deixar dados em cache, já que se os dados não existirem, podemos
+    //mandar puxar, se eles já existirem não precisamos fazer a request
+
+    println!("{:?}", new_hash)
+
+    // É comum querer verificar se uma determinada chave tem
+    //  um valor e, se não tiver, inserir um valor para ela
+    // entry() verifica se existe um valor para a chave no hashMap
+    //  e se não tiver ele insere
+}
+
+fn count_spaces() {
+    let text = "Hello world wonderful world";
+    let mut map = HashMap::new();
+
+    for word in text.split_whitespace() {
+        //word será a chave, e  count será inserido como value do hashmap
+        let count = map.entry(word).or_insert(0);
+        //or_insert retorna uma referencia mutável do value (& mutV
+        // aí estamos armazenando em count, quando a chave é igual, a referência é mudada
+        // para count += 1
+        *count += 1;
+    }
+
+    println!("{:?}", map)
 }
