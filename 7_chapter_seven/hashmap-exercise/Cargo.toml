@@ -1,3 +1,8 @@
+
+# /aborta sem resolver a pilha, serve para deixar o binário menor
+[profile.release]
+panic = 'abort'
+
 [package]
 name = "hashmap-exercise"
 version = "0.1.0"

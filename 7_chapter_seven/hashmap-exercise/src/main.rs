@@ -1,3 +1,5 @@
+// exercício incompleto, olhar depois
+
 use hashmap_exercise::sort::sort;
 use hashmap_exercise::struct_list::List;
 use hashmap_exercise::vector_operations::integer_list;
